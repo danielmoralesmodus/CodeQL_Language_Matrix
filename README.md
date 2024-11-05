@@ -131,7 +131,7 @@ use ```bash --platform linux/amd64 ``` if you are using a Mac Silicon
    Specifies the working directory for the runner within the container. This is where files related to workflow executions will be stored.
 
 4. **`LABELS`**
-   Allows you to assign labels to the runner, like "self-hosted" or "docker." Labels help in categorizing and selecting runners for specific workflows in GitHub Actions.
+   Allows you to assign labels to the runner, like "self-hosted" Labels help in categorizing and selecting runners for specific workflows in GitHub Actions.
 
 5. **`-v /var/run/docker.sock:/var/run/docker.sock`**
    This mounts the Docker socket inside the container. By exposing the Docker socket, the runner can start and manage other Docker containers from within the runner container itself, useful for workflows that need Docker.
@@ -154,3 +154,5 @@ jobs:
         uses: actions/checkout@v2
 
 ```
+### Desable all C# CodeQL Revisison
+
