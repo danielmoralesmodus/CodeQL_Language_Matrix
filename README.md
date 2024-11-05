@@ -156,3 +156,16 @@ jobs:
 ```
 ### Desable all C# CodeQL Revisison
 
+# Skipping a Language in CodeQL GitHub Analysis
+
+To skip a specific language in CodeQL analysis on GitHub, you can customize the CodeQL configuration in your GitHub Actions workflow. If your repository has code in multiple languages but you only want to analyze specific ones, you can specify this in the `language` field of the CodeQL action.
+
+## Steps to Configure CodeQL to Skip a Language
+
+1. **Set Specific Languages**: In your CodeQL workflow YAML file, use the `language` option to specify only the languages you want to analyze. Any language not listed will be skipped.
+
+   ```yaml
+   - name: Initialize CodeQL
+     uses: github/codeql-action/init@v2
+     with:
+       languages: javascript, python # Add only the languages you want to include
