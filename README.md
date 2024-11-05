@@ -117,7 +117,7 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   myoung34/github-runner:latest
 ```
-use ```bash --platform linux/amd64 ``` if you are using a Mac Silicon
+use ``` --platform linux/amd64 ``` if you are using a Mac Silicon
 ### GitHub Self-Hosted Runner Environment Variables and Options
 
 
