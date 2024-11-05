@@ -166,6 +166,16 @@ To skip a specific language in CodeQL analysis on GitHub, you can customize the 
 
    ```yaml
    - name: Initialize CodeQL
-     uses: github/codeql-action/init@v2
+     uses: github/codeql-action/init@v3
      with:
        languages: javascript, python # Add only the languages you want to include
+2. Navigate to Your Repository
+Go to the main page of your GitHub repository.
+
+3. Access Actions
+Select the Actions tab from the repository menu to view your existing workflows.
+
+4. Locate the CodeQL Workflow
+Find the CodeQL Analysis workflow in the list of workflows. If it’s not immediately visible, use the search bar to locate it.
+
+5. Edit the Workflow File
