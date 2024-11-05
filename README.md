@@ -179,3 +179,25 @@ Select the Actions tab from the repository menu to view your existing workflows.
 Find the CodeQL Analysis workflow in the list of workflows. If it’s not immediately visible, use the search bar to locate it.
 
 5. Edit the Workflow File
+
+## CodeQL Code scanning
+
+let's add this code in java in order to detect vulnerabilities with the use of CodeQL on this route ```Java/src/main/java/com/.classpath ```
+
+```java
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class FooServlet extends HttpServlet {
+  protected void doGet(HttpServletRequest request, HttpServletResponse response)
+  throws ServletException, IOException {
+    // String cardSecurityCode = "12345";
+    // User provided value
+    String cardSecurityCode = request.getParameter("cardSecurityCode");
+    Runtime.getRuntime().exec("validateCode.sh " + cardSecurityCode);
+  }
+}
+ ```
+
+
