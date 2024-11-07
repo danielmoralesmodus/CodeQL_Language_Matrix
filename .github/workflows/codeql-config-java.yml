@@ -1,6 +1,0 @@
-name: "WebGoat CodeQL config"
-
-paths:
-  - Java
-paths-ignore:
-  - '**/*.js'
