@@ -109,7 +109,7 @@ Use the official GitHub Actions Runner Docker image to set up a containerized se
 ```bash
 docker run -d \
   --name github-runner \
-  -e REPO_URL="https://github.com/YOUR_GITHUB_ORG/github-advanced-security-codeql-demo" \
+  -e REPO_URL="https://github.com/YOUR_GITHUB_ORG/CodeQL_Language_Matrix" \
   -e RUNNER_TOKEN="YOUR_GITHUB_TOKEN" \
   -e RUNNER_NAME="docker-runner" \
   -e RUNNER_WORKDIR="/tmp/github-runner" \
