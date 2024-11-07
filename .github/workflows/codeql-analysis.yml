@@ -33,9 +33,8 @@ jobs:
       fail-fast: false
       matrix:
         iclude:
-        - language: [ 'javascript', 'java', 'csharp' ]
+        - language: [ 'csharp' ]
           build-mode: autobuild
-          node-version: [20]
         # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby' ]
         # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
 
