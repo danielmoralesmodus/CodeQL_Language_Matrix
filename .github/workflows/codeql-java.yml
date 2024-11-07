@@ -37,7 +37,7 @@ jobs:
       uses: github/codeql-action/init@v3
       with:
         languages: java
-        config-file: ./.github/codeql-config-java.yml
+        config-file: ./.github/workflows/codeql-config-java.yml
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v3
